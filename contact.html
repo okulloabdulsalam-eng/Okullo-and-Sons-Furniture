@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Okullo & sons</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Okullo & sons furniture</a>
+      <nav class="nav" id="site-nav">
+        <a href="index.html">Home</a>
+        <a href="collections.html">Collections</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container contact">
+    <h1>Contact Us</h1>
+    <p>Tell us what you're looking for and we'll get back to you within 2 business days.</p>
+    <form id="contact-form">
+      <div class="form-row"><label for="name">Name</label><input id="name" name="name" required></div>
+      <div class="form-row"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+      <div class="form-row"><label for="message">Message</label><textarea id="message" name="message" rows="6" required></textarea></div>
+      <div class="form-row"><button class="btn primary" type="submit">Send Message</button></div>
+      <div id="form-status" role="status" aria-live="polite"></div>
+    </form>
+
+    <section style="margin-top:2rem">
+      <h3>Visit our workshop</h3>
+      <p>By appointment only — we love meeting customers and showing work in progress.</p>
+      <p><strong>Address:</strong> Basajja street, Ishaka</p>
+    </section>
+  </main>
+
+  <!-- Quote modal (reusable) -->
+  <div id="quote-modal" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="quote-title">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <h3 id="quote-title">Request a Quote</h3>
+      <form id="quote-form">
+        <div class="form-row"><label for="q-name">Name</label><input id="q-name" name="name" required></div>
+        <div class="form-row"><label for="q-email">Email</label><input id="q-email" name="email" type="email" required></div>
+        <div class="form-row"><label for="q-message">Project details</label><textarea id="q-message" name="message" rows="4" required></textarea></div>
+        <div class="form-row"><button class="btn primary" type="submit">Send Request</button></div>
+        <div id="quote-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Okullo & sons furniture Co.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
